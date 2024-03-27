@@ -1,0 +1,32 @@
+<div class="regions-page">
+    <div class="regions-page-container">
+        <div class="regions-page-wrapper">
+            <div class="regions-navbar">
+                <app-navbar />
+            </div>
+            <div class="regions-content container w-4/5 mx-auto">
+                <div class="heading sm:w-2/3 py-5 text-black">
+                    <h1
+                        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+                        Come with us discover <span
+                            class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600">the
+                            regions of Morocco</span>
+                    </h1>
+                    <!-- <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus
+                        on markets where
+                        technology, innovation, and capital can unlock long-term value and drive economic growth.</p> -->
+                </div>
+                <div class="regions">
+                    <div class="regions-container py-5">
+                        <div class="regions-wrapper grid grid-cols-1 sm:grid-cols-3 gap-5">
+                            <div *ngFor="let region of regions" class="region">
+                                <app-region-card  [region]="region"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="regions-footer"></div>
+        </div>
+    </div>
+</div>
